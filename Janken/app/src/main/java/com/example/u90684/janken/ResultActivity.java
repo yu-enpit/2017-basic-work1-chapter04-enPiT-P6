@@ -15,7 +15,6 @@ public class ResultActivity extends AppCompatActivity {
     final int JANKEN_GU=0;
     final int JANKEN_CHOKI=1;
     final int JANKEN_PA=2;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
