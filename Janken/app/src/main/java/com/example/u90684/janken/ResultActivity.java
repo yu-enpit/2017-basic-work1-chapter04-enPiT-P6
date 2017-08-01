@@ -96,6 +96,7 @@ public class ResultActivity extends AppCompatActivity {
         editor.putInt("BEFORE_LAST_COM_HAND",lastComHand);
         editor.putInt("GAME_RESULT",gameResult);
 
+
         editor.commit();
     }
     private int getHand(){
