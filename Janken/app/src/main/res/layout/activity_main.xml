@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.u90684.janken.MainActivity">
 
+
     <ImageButton
         android:id="@+id/choki"
         android:layout_width="100dp"
