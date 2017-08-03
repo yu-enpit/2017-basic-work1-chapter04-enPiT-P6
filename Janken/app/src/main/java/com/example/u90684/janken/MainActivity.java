@@ -14,14 +14,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SharedPreferences pref= PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor=pref.edit();
+
+//起動時にデータをクリアする。
+        SharedPreferences pref =
+                PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = pref.edit();
         editor.clear();
         editor.commit();
     }
-
-    public void onJankenButtonTapped(View view){
-        Intent intent=new Intent(this, ResultActivity.class);
+    public void onJanKenButtonTapped(View view){
+        Intent intent = new Intent(this,ResultActivity.class);
+        int id = intent.getIntExtra("MY_HAND",view.getId());
         intent.putExtra("MY_HAND",view.getId());
         startActivity(intent);
     }
